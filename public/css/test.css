@@ -1,0 +1,105 @@
+:root {
+  --primaryColor: #CCD5AE;
+  --primarySecondary: #829460;
+  --primaryThird: #E9EDC9;
+
+  --fontheading: #6B7752;
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--primarySecondary);
+}
+.navbar .container {
+  /* background-color: var(--primarySecondary); */
+  border-radius: 20px;
+
+}
+
+.navbar-brand span{
+  color: red;
+    /* color: var(--primaryColor); */
+}
+.home {
+  background-color: var(--primaryColor);
+}
+/* hero */
+.hero .heading {
+  color: var(--fontheading);
+  font-size: 40px;
+  line-height: 139.5%;
+}
+.hero .container {
+  /* background: url('/svg/bg.svg'); */
+  margin-top: 3rem;
+  background-color: var(--primaryThird);
+  z-index: 0;
+  height: 80vh;
+  background-size: cover;
+  border-radius: 30px;
+}
+.hero .row{
+  padding: 10rem 10rem 10rem 10rem ;
+    /* background-color: yellow; */
+    /* height: 110vh; */
+  }
+
+.section-satu {
+  background-image: url('your-background-image.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.left-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.right-hero img{
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  left: 4rem;
+}
+
+/* section tiga */
+.section-dua .card {
+  margin: 4rem 1rem 1rem ;
+}
+.category-card {
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.icon span {
+  font-size: 3rem;
+  color: #212529;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+
+/* seection tiga */
+.section-tiga .card{
+ margin: 6rem 4rem 4rem 0;
+}

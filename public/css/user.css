@@ -1,0 +1,48 @@
+:root {
+  --primaryColor:  
+}
+
+.home {
+  background: url('/svg/bg.svg');
+  z-index: 0;
+  height: 100vh;
+  background-size: cover;
+}
+
+/* navbar */
+.navbar-brand span{
+  color: red;
+}
+/* emd mavbar */
+
+/* hero */
+.row{
+  padding-top: 10rem;
+  /* background-color: yellow; */
+  /* height: 110vh; */
+}
+.left-hero .subheading{
+  margin: 2rem 0 2rem 0;
+}
+.row .input-group {
+  width: 400px;
+}
+.right-hero img {
+  top: 0;
+  right: 0;
+  /* background-color: red; */
+  margin-top: -6rem;
+}
+/* end hero */
+
+/* section two */
+
+.section-dua {
+z-index: 100;
+  /* background-color: yellow; */
+}
+.section-dua img {
+  margin-top: -5rem;
+}
+
+
