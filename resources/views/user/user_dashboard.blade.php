@@ -175,68 +175,6 @@
 </section>
 {{-- menu section close --}}
 
-<!-- Testimonials Section Open -->
-<section class="testimonials text-center">
-    <div class="container">
-        <span class="text-primary">Testimonials</span>
-        <h2 class="fw-bold text-dark mt-3">What our customers say?</h2>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active rounded-circle bg-primary" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            class="rounded-circle bg-primary" aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="content-testimonials mt-5" data-aos="fade-up" data-aos-duration="1000">
-                                <img class="rounded-circle" src="assets/img/img-testimonials-1.svg"
-                                    style="width: 80px" />
-                                <h5 class="name-testimonials text-dark mt-3">
-                                    Ananda Ayu Gempita
-                                </h5>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star-half"></i>
-                                <p class="text-secondary mt-3">
-                                    I love the food here. The atmosphere
-                                    is comfortable and every time I come
-                                    here it is always crowded with
-                                    people.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="content-testimonials mt-5" data-aos="fade-up" data-aos-duration="1000">
-                                <img class="rounded-circle" src="assets/img/img-testimonials-2.svg"
-                                    style="width: 80px" />
-                                <h5 class="name-testimonials text-dark mt-3">
-                                    Alya Farhana
-                                </h5>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <p class="text-secondary mt-3">
-                                    I really like the food here, it's
-                                    delicious and the price is very
-                                    affordable. I often come here with
-                                    my friends on weekends. Love it!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Testimonials Section Close -->
-
 <!-- Gallery Section Open -->
 <section class="gallery" id="gallery">
     <div class="container">

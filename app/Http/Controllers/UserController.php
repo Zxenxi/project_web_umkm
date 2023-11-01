@@ -18,7 +18,7 @@ class UserController extends Controller
         // $products = Product::with('category')->get();
 
         return view('user.user_dashboard', compact('category', 'products'));
-    }
+    }   
 
     public function mainCategory()
     {
@@ -59,11 +59,27 @@ class UserController extends Controller
             ->paginate(5);
         return view('user.user_mainproduct', compact('products', 'category'));
     }
-    public function details($id)
-    {
-        $category = Category::all();
+    // public function details($id)
+    // {
+    //     $category = Category::all();
         
-        $product = Product::findOrFail($id);
-        return view('user.user_detailsProduct', compact('product', 'category'));
-    }
+    //     $product = Product::findOrFail($id);
+    //     return view('user.user_detailsProduct', compact('product', 'category'));
+    // }
+    public function details($id)
+{
+    $category = Category::all();
+
+    // Retrieve the product based on its ID
+    $product = Product::findOrFail($id);
+
+    // Retrieve the associated customer (assuming there is a 'customer' relationship defined in the Product model)
+    $customer = $product->customer;
+
+    // Access the phone number from the customer
+    $phone_number = $customer->phone_number;
+
+    return view('user.user_detailsProduct', compact('product', 'phone_number', 'category'));
+}
+
 }

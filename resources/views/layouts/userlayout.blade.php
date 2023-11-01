@@ -74,7 +74,7 @@
     </nav>
     <!-- Navbar Section Close -->
 
-    {{-- content opem --}}
+    {{-- content open --}}
     @yield('content')
 
     <!-- Footer Section Open -->
@@ -168,11 +168,39 @@
     <script>
         AOS.init();
     </script>
-    {{-- @yield('scripts') --}}
+    <!-- {{-- @yield('scripts') --}} -->
     <!-- Include custom JavaScript -->
     <!-- Include custom JavaScript -->
     <script src="{{ asset('js/slider.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Add this script at the end of your Blade template, just before the closing </body> tag. -->
+    <script>
+    // Get the current URL
+    var currentURL = window.location.href;
+
+    // Check if the current URL is the home page URL
+    var isHomePage = currentURL === '{{ route('dashboard') }}';
+
+    // Find the navbar brand link element
+    var brandLink = document.querySelector('.navbar-brand');
+
+    // Add a click event listener to the brand link
+    brandLink.addEventListener('click', function (event) {
+        if (isHomePage) {
+            // If it's the home page, scroll to the top smoothly
+            event.preventDefault(); // Prevent the default link behavior
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            // If it's not the home page, redirect to the home page
+            window.location.href = '{{ route('dashboard') }}';
+        }
+    });
+    </script>
 
 
 </body>

@@ -2,12 +2,13 @@
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+// use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\dashboardController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
 Route::middleware('auth')->group(function () {
 
     Route::get('/home/dashboard', [dashboardController::class, 'index']);
@@ -59,6 +61,7 @@ Route::middleware('auth')->group(function () {
 });
 
 //------------------------------------------------------------------------------------------------------
+
     Route::get('main', [UserController::class, 'index'])->name('dashboard')->middleware('guest');
     Route::get('allcategory', [UserController::class, 'mainCategory'])->name('mainCategory');
     Route::get('/categories/{id}', [UserController::class, 'showByCategory'])->name('categoryshow');

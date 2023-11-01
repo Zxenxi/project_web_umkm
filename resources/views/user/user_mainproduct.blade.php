@@ -10,7 +10,6 @@
 @endsection
 
 @section('content')
-{{-- <section class="menu" id="menu"> --}}
     <div class="container">
         <form class="form" method="get" action="{{ route('search') }}">
             <div class="form-group w-100 mb-3">
@@ -27,7 +26,6 @@
             <div class="card-menu bg-white mt-3 mx-2" data-aos="fade-up" data-aos-duration="1000">
                 <a href="/details/{{ $product->id }}">
                     <div class="item">
-                        <!-- <img src="{{ asset('storage/'. $product->image ) }}" alt="{{ $product->name }}" -->
                         <img src="{{ Storage::url($product->image) }}"alt="{{ $product->name }}" 
                             class="w-100 h-200 object-fit-cover" />
                         <h5 class="menu-title text-dark mt-3">{{ $product->name }}</h5>
@@ -45,5 +43,4 @@
             @endforeach
         </div>
     </div>
-</section>
 @endsection
