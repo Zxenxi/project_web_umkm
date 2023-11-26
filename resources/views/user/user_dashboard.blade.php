@@ -239,6 +239,3 @@
 </section>
 
 @endsection
-{{-- <script>
-    var productCarousel = new bootstrap.Carousel(document.getElementById('productCarousel'));
-</script> --}}

@@ -88,7 +88,6 @@
                         <th>Harga</th>
                         <th>Kategori</th>
                         <th>Gambar</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
 
@@ -125,7 +124,6 @@
                             No Image Available
                             @endif
                         </td>
-                        <td><a href="{{ url('action') }}">Action</a></td>
                     </tr>
                     @endforeach
                     @else
@@ -140,86 +138,13 @@
                         <td>-</td>
                         <td>{{$category->name}}</td>
                         <td>-</td>
-                        <td><a href="{{ url('action') }}">Action</a></td>
                     </tr>
                     @endif
                     @endforeach
                 </tbody>
             </table>
-        </div> <!-- Added this line -->
+        </div> 
     </div>
-
-    {{-- <div class="card-body">
-        <table id="datatablesSimple">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Deskripsi</th>
-                    <th>Harga</th>
-                    <th>Kategori</th>
-                    <th>Gambar</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Deskripsi</th>
-                    <th>Harga</th>
-                    <th>Kategori</th>
-                    <th>Action</th>
-                </tr>
-            </tfoot>
-            <tbody>
-                @php
-                $count = 0;
-                @endphp
-
-                @foreach($categories as $category)
-                @php
-                $products = $category->products; // get associated products for this category
-                @endphp
-
-                @if(count($products) > 0)
-                @foreach($products as $product)
-                @php
-                $count++;
-                @endphp
-
-                <tr>
-                    <td>{{ $count }}</td>
-                    <td>{{$product->name}}</td>
-                    <td>{{$product->description}}</td>
-                    <td>Rp {{ number_format($product->price, 2, ',', '.') }}</td> <!-- Modified this line -->
-                    <td>{{$category->name}}</td>
-                    <td>
-                        @if($product->image)
-                        <img src="{{ asset('storage/'. $product->image ) }}" width="200" height="200">
-                        @else
-                        No Image Available
-                        @endif
-                    </td>
-                    <td><a href="{{ url('action') }}">Action</a></td>
-                </tr>
-                @endforeach
-                @else
-                @php
-                $count++;
-                @endphp
-                <tr>
-                    <td>{{ $count }}</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>{{$category->name}}</td>
-                    <td><a href="{{ url('action') }}">Action</a></td>
-                </tr>
-                @endif
-                @endforeach
-            </tbody>
-        </table>
-    </div> --}}
 </div>
 
 @endsection

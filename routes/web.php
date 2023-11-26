@@ -8,7 +8,6 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\dashboardController;
-// use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
