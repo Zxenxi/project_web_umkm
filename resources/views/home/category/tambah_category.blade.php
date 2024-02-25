@@ -71,13 +71,14 @@
     @if(session('success'))
     <div class="alert alert-success">{{ session('success') }}</div>
     @endif
-    <button type="button" id="add-category-btn" class="btn btn-primary">Add Category</button>
 
     <div id="category-form" style="display: none">
         <form method="POST" action="/categories" class="category-form">
             @csrf
             <div class="form-group">
-                <label for="name">Tambah Kategori</label>
+                <label for="name">
+                        Tambah Kategori
+                </label>
                 <input type="text" name="name" id="name" class="form-control col-md-6" placeholder="Masukan kategori"
                     style="width: 20%">
             </div>

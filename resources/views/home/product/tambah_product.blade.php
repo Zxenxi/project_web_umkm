@@ -67,7 +67,7 @@
     <div class="alert alert-success">{{ session('success') }}</div>
     @endif
 
-    <h3>Tambahkan Product</h3>
+    <h3>Nama Product</h3>
     <input type="text" name="name" id="name" class="form-control">
     <label for="price">harga</label>
     <input type="text" name="price" id="price" class="form-control">
